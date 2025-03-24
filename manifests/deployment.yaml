@@ -6,7 +6,7 @@ metadata:
     app: will
   namespace: dev
 spec:
-  replicas: 7
+  replicas: 3
   selector:
     matchLabels:
       app: will
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: will
-        image: wil42/playground:v2
+        image: wil42/playground:v1
         ports:
         - containerPort: 8888
