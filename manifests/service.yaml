@@ -1,12 +1,15 @@
 appVersion: v1
 kind: Service
 metadata:
-  name: my-app-service
+  name: will-app-service
   namespace: dev
+  labels:
+    app: will
 spec:
+  type: LoadBalancer
   selector:
-    app: my-app
+    app: will
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 8888
+    - protocol: TCP
+      port: 8888
+      targetPort: 8888
