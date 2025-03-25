@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: will-app-service
+  name: okoca-app-service
   namespace: dev
   labels:
-    app: will
+    app: okoca
 spec:
   type: LoadBalancer
   selector:
-    app: will
+    app: okoca
   ports:
     - protocol: TCP
       port: 80
